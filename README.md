@@ -26,20 +26,20 @@ Een source hosting platform is een platform/provider waar je als ‘gast’ jouw
 
 Door je code aan te passen in VSCodium en op te slaan, je website wordt dan geüpdate.
 
-### WOE 2/9
+### WOE 2/9 - Deep dives
 
-- Deep dives:
+- HTML & CSS BASICS (Justus)
+  Aantekeningen:
 
-* HTML & CSS BASICS (Justus)
-* Interactie: MMD, micro-interacties, forms (Nicky)
+  <img src="/mappie/oefeningen/presentatie/2026-09-10 23-14 pagina 1.jpeg" >
+
+- Interactie: MMD, micro-interacties, forms (Nicky)
   We hebben verder gewerkt aan
 
-### VRIJ 4/9
+### VRIJ 4/9 - Deep dives:
 
-- Deep dives:
-
-* Praktische CSS (Vasilis)
-* Schetsen (Charley)
+- Praktische CSS (Vasilis)
+- Schetsen (Charley)
 
 ### MA 7/9 - SPRINT1
 
