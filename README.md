@@ -31,8 +31,9 @@ Door je code aan te passen in VSCodium en op te slaan, je website wordt dan geü
 - HTML & CSS BASICS (Justus)
   Aantekeningen:
 
-<img width="500" height="1000" alt="image" src="https://github.com/user-attachments/assets/032be7f1-03ab-49bb-8383-1d7a999584a6" />
-
+  <img src="/mappie/oefeningen/presentatie/2026-09-10 23-14 pagina 1.jpeg" >
+    <img src="/mappie/oefeningen/presentatie/2026-09-10 23-14 pagina 2.jpeg" >
+      <img src="/mappie/oefeningen/presentatie/2026-09-10 23-14 pagina 3.jpeg" >
 
 - Interactie: MMD, micro-interacties, forms (Nicky)
   We hebben verder gewerkt aan
