@@ -36,12 +36,16 @@ Door je code aan te passen in VSCodium en op te slaan, je website wordt dan geü
 <img src="/mappie/assets/images/2026-09-10 23-14 pagina 3.jpeg" >
 
 - Interactie: MMD, micro-interacties, forms (Nicky)
-  We hebben verder gewerkt aan
+  We hebben gewerkt aan het wok-to-walk menu:
+  <img src="/mappie/assets/images/figma wok-to-walk menu.png" >
 
 ### VRIJ 4/9 - Deep dives:
 
 - Praktische CSS (Vasilis)
+
 - Schetsen (Charley)
+  <img src="/mappie/assets/images/schetsen deep dive.jpeg" >
+  <img src="/mappie/assets/images/aantekeningen schetsen deep dive.jpeg" >
 
 ### MA 7/9 - SPRINT1
 
