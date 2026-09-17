@@ -1,20 +1,192 @@
-/* HIER KOMT JOUW CSS */
+html {
+  color-scheme: light dark;
+
+  /* het lichte thema */
+  --background: #4f63d2;
+  --color: whitesmoke;
+
+  /* het donkere thema */
+  @media (prefers-color-scheme: dark) {
+    /* nb. dezelfde custom properties gebruiken */
+    /* de custom properties van het lichte thema worden overschreven */
+    --background: blue;
+    --color: white;
+
+    --background-button: midnightblue;
+    /* nb. de tekst van de button blijft wit */
+    /* die hoef je dan niet ook in het donkere thema te definiëren */
+    /* dat mag wel :) */
+  }
+}
+
+button {
+  padding: 0.5em 1em;
+  appearance: none;
+  border: none;
+  border-radius: 2em;
+  font-size: 2rem;
+  cursor: pointer;
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+html:has([value="light-theme"]:checked) {
+  color-scheme: light;
+}
+
+html:has([value="dark-theme"]:checked) {
+  color-scheme: dark;
+}
+
 @font-face {
   font-family: "Euripides, sans-serif";
-  src: url("../type/Euripides.otf");
+  src: url("../type/Euripides.woff");
   font-weight: 400;
   font-style: normal;
 }
 
-body {
+@font-face {
   font-family: "Euripides, sans-serif";
-  background-color: #4f63d2;
-  color: whitesmoke;
-  color-scheme: light dark;
+  src: url("../type/Euripides.woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
-img {
-  width: 30%;
-  height: 30%;
-  margin-left: 400px;
+@font-face {
+  font-family: "Euripides, sans-serif";
+  src: url("../type/Euripides.woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Euripides, sans-serif";
+  background-color: var(--background);
+  color: var(--color);
+}
+
+/* Dit is dus niet helemaal juist, <li> is niet per se de juiste term in dit geval, beter <section> gebruiken.
+grid-column-end en grid-row-end is in dit geval ook niet nodig, wordt al automatich in eerste section geplaatst doordat je de startpunten aangeeft. */
+
+/* li:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} */
+
+/* Hier begint o.a. de grid */
+
+main {
+  display: grid;
+  gap: 1em;
+  grid-template-rows: 24em;
+  grid-template-columns: 1fr 2fr 3fr;
+
+  max-width: 48em;
+
+  @media (width > 32em) {
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+main section:nth-of-type(1) {
+  /* Dit is de eerste cel van de grid, de sectie met letter f */
+  /* background-color: green; */
+  img {
+    width: 100%;
+    max-width: 12em; /* cel wordt niet groter dan 12em*/
+  }
+}
+
+main section:nth-of-type(2) {
+  display: none; /* cel wordt verborgen bij een scherm kleiner dan 32em en telt dan dus niet mee in de lay-out */
+
+  img {
+    width: 100%;
+  }
+
+  @media (width > 32em) {
+    /* cel is weer zichtbaar bij een scherm groter dan 32em en display: none; wordt dan dus overgeschreven */
+    display: block;
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+}
+
+main section:nth-of-type(3) {
+  /* de sectie met letter i */
+  display: none;
+
+  img {
+    width: 60%;
+  }
+
+  @media (width > 32em) {
+    display: block;
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+}
+
+main section:nth-of-type(4) {
+  /* de sectie met letter D */
+
+  img {
+    width: 80%;
+  }
+
+  @media (width > 32em) {
+    display: block;
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+}
+
+main section:nth-of-type(5) {
+  /* de sectie met letter A */
+  display: none;
+
+  img {
+    width: 100%;
+  }
+
+  @media (width > 32em) {
+    display: block;
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+}
+
+main section:nth-of-type(6) {
+  /* background-color: red; */ /* de sectie met 31 aug  */
+
+  @media (width > 32em) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+}
+
+main section:nth-of-type(7) {
+  /* de sectie met letter Frida */
+  /* background-color: red; */
+
+  img {
+    width: 100%;
+  }
+
+  @media (width > 32em) {
+    grid-row-start: 3;
+    grid-row-end: 5; /* Hier benoem je dus wel end, want img staat in meerdere cellen*/
+    grid-column-start: 3;
+  }
 }
