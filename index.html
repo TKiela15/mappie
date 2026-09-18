@@ -16,23 +16,35 @@
       defer
     ></script>
   </head>
+
   <body>
     <header>
       <h1>Frida Kahlo</h1>
       <h2>[Digitaal Tuintje van tessa]</h2>
 
+      <!-- 3 radio buttons, door dezelfe 'name' te gebruiken horen ze bij elkaar en kan er steeds maar één geselecteerd worden, :checked kijkt of een checkbox of radio button geselecteerd is. -->
       <label>
         <input type="radio" name="theme" value="auto-theme" checked />
+        <!-- De auto-radio button heeft checked en is daarmee standaard geselecteerd. -->
         auto
       </label>
       <label>
         <input type="radio" name="theme" value="light-theme" />
+        <!-- Als deze radio button geselecteerd is, wordt color-scheme: light; geselecteerd-->
         licht
       </label>
       <label>
         <input type="radio" name="theme" value="dark-theme" />
         donker
       </label>
+
+      <picture>
+        <source
+          srcset=".assets/images/frida dark kopie.svg"
+          media="(prefers-color-scheme: dark)"
+        />
+        <img src=".assets/images/-14 kopie.png" alt="" />
+      </picture>
 
       <p>
         [Dit is de model repository,

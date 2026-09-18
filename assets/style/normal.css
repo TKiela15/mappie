@@ -1,22 +1,12 @@
 html {
   color-scheme: light dark;
 
-  /* het lichte thema */
-  --background: #4f63d2;
-  --color: whitesmoke;
+  /* Met de light-dark() functie definieer je in één keer een lichte en donkere waarde voor je custom properties. */
+  --background: light-dark(#c64b44, #463b88);
+  --color: light-dark(whitesmoke, whitesmoke);
 
-  /* het donkere thema */
-  @media (prefers-color-scheme: dark) {
-    /* nb. dezelfde custom properties gebruiken */
-    /* de custom properties van het lichte thema worden overschreven */
-    --background: blue;
-    --color: white;
-
-    --background-button: midnightblue;
-    /* nb. de tekst van de button blijft wit */
-    /* die hoef je dan niet ook in het donkere thema te definiëren */
-    /* dat mag wel :) */
-  }
+  --background-button: light-dark(#445a9f, whitesmoke);
+  --color: light-dark(white, white);
 }
 
 button {
@@ -32,6 +22,7 @@ button {
   }
 }
 
+/* Dit stukje has() geeft aan dat als de lichte optie is gekozen (toggle checked), je met color-scheme kunt aangeven dat het lichte thema actief is. Hetzelfde geldt voor de donkere optie.  */
 html:has([value="light-theme"]:checked) {
   color-scheme: light;
 }
@@ -140,7 +131,7 @@ main section:nth-of-type(3) {
 
 main section:nth-of-type(4) {
   /* de sectie met letter D */
-
+  display: none;
   img {
     width: 80%;
   }
@@ -177,7 +168,7 @@ main section:nth-of-type(6) {
 }
 
 main section:nth-of-type(7) {
-  /* de sectie met letter Frida */
+  /* de sectie met Frida */
   /* background-color: red; */
 
   img {
@@ -186,7 +177,7 @@ main section:nth-of-type(7) {
 
   @media (width > 32em) {
     grid-row-start: 3;
-    grid-row-end: 5; /* Hier benoem je dus wel end, want img staat in meerdere cellen*/
+    grid-row-end: 5; /* Hier benoem je dus wel end, want img staat in meerdere cellen */
     grid-column-start: 3;
   }
 }
