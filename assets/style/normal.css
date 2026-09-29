@@ -2,7 +2,7 @@ html {
   color-scheme: light dark;
 
   /* Met de light-dark() functie definieer je in één keer een lichte en donkere waarde voor je custom properties. */
-  --background: light-dark(#3a72df, #463b88);
+  --background: light-dark(yellow, #463b88);
   --background-2: light-dark(#bd4839, #a81916);
   --color: light-dark(#fff990, whitesmoke);
 
@@ -50,7 +50,6 @@ body {
   display: grid;
   margin: 0;
   grid-template-rows: auto 1fr 1fr;
-  grid-template-columns:;
   grid-template-areas:
     "header"
     "main"
@@ -64,7 +63,7 @@ body {
 header {
   display: grid;
   /* grid-template-columns: 1fr; */
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: max-content 700px;
   grid-area: header;
 
   label {
@@ -99,6 +98,8 @@ header {
     @media (width > 70em) {
       padding-left: 400px;
     }
+
+    /* grid-column: 1/-1; */
   }
 
   h2 {
@@ -115,6 +116,7 @@ main {
   background-color: var(--background-2);
 
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, max-content);
 
   padding: 5px 5px;
 
@@ -140,6 +142,7 @@ main {
 
 section:nth-of-type(1) {
   padding-top: 100px;
+  margin: 20px;
   img {
     width: 100%;
     transition: 0.2s;
@@ -157,6 +160,7 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
+  margin: 20px;
   img {
     width: 100%;
     transition: 0.2s;
@@ -173,6 +177,7 @@ section:nth-of-type(2) {
 
 section:nth-of-type(3) {
   padding-top: 100px;
+  margin: 20px;
   img {
     width: 100%;
     transition: 0.2s;
@@ -188,6 +193,7 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(4) {
+  margin: 20px;
   img {
     width: 100%;
     transition: 0.2s;
@@ -204,6 +210,7 @@ section:nth-of-type(4) {
 
 section:nth-of-type(5) {
   padding-top: 100px;
+  margin: 20px;
   img {
     width: 100%;
     transition: 0.2s;
@@ -220,6 +227,7 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(6) {
+  margin: 20px;
   img {
     width: 100%;
     transition: 0.2s;
@@ -234,97 +242,6 @@ section:nth-of-type(6) {
   }
 }
 
-section:nth-of-type(7) {
-  display: none;
-
-  img {
-    width: 100%;
-  }
-
-  @media (width > 40em) {
-    display: block;
-    grid-column: 1/2;
-  }
-
-  @media (width > 62em) {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: block;
-  }
-
-  @media (width > 70em) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    display: block;
-  }
-}
-
-section:nth-of-type(8) {
-  display: none;
-
-  img {
-    width: 100%;
-  }
-
-  @media (width > 40em) {
-    display: block;
-    grid-column: 2/3;
-  }
-
-  @media (width > 62em) {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: block;
-  }
-
-  @media (width > 70em) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    display: block;
-  }
-}
-
-section:nth-of-type(9) {
-  display: none;
-
-  img {
-    width: 100%;
-  }
-
-  @media (width > 40em) {
-    display: block;
-    grid-column: 3/4;
-  }
-
-  @media (width > 62em) {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: block;
-  }
-
-  @media (width > 70em) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    display: block;
-  }
-}
-
-section:nth-of-type(10) {
-  display: none;
-
-  img {
-    width: 100%;
-  }
-
-  @media (width > 40em) {
-    display: block;
-    grid-column: 4/5;
-  }
-
-  @media (width > 62em) {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: block;
-  }
-
-  @media (width > 70em) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    display: block;
-  }
-}
 /* dialog { */
 /* styling van de dialog*/
 
