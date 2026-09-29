@@ -48,7 +48,8 @@ html:has([value="dark-theme"]:checked) {
 
 body {
   display: grid;
-  grid-template-rows: max-content 1fr 1fr;
+  margin: 0;
+  grid-template-rows: auto 1fr 1fr;
   grid-template-columns:;
   grid-template-areas:
     "header"
@@ -63,27 +64,39 @@ body {
 header {
   display: grid;
   /* grid-template-columns: 1fr; */
-  grid-template-rows: repeat(4, max-content);
+  grid-template-rows: max-content 700px repeat(2, max-content);
   grid-area: header;
 
-  @media (width > 40em) {
-    /* grid-template-columns: 1fr 1fr; */
+  label {
+    justify-self: end;
+    padding-right: 20px;
+    padding-top: 20px;
   }
 
   img {
     width: 100%;
+    height: 700px;
+    padding-top: 100px;
     /* grid-column: 1/-1; */
   }
 
   h1 {
     font-family: "Euripides", sans-serif;
     font-weight: 700;
-    font-size: 8rem;
+    font-size: 5rem;
     color: var(-color);
 
-    padding-left: 30px;
-    padding-top: 30px;
+    padding-left: 50px;
+    /* padding-top: 30px; */
     margin: 0;
+
+    /* @media (width > 62em) {
+      padding-left: 80px;
+    } */
+
+    @media (width > 70em) {
+      padding-left: 400px;
+    }
 
     /* grid-column: 1/-1; */
   }
@@ -100,7 +113,7 @@ main {
   background-color: var(--background-2);
 
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+
   padding: 5px 5px;
 
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */

@@ -114,3 +114,23 @@ Het geeft structuur in je ontwerp, je hebt vaste punten waar je elementen kunt p
 Hiërarchie
 
 ### VRIJ - 18/9
+
+### VRIJ 28/9
+
+<img src="./assets/images/2026-09-28 12-00.jpeg" />
+
+CHECK-OUT
+
+1. Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
+
+- Wat een woord/tag betekent maakt niet zoveel uit, maar het is vooral belangrijk dat een website toegankelijk is voor een bezoeker.
+
+2. Wat voor type beperkingen hebben invloed op het gebruiken van websites?
+
+- Visuele (tunnelvisie, blind, staar ertc.), cognitieve (Dyslexie, ADHD etc.), motorische (Parkinson, Reuma, missen van ledematen, verlamd) en auditieve beperkingen (slechthorend/doof).
+
+3. Noem drie manieren om door een website te navigeren met jouw screenreader.
+
+- Met de Tab-toets kun je van item naar item navigeren.
+- Met shift+Tab kun je van richting wisselen bij het switchen van elementen.
+- Met de pijltjes kun je ook elementen selecteren, nog specifieker, zelfs woorden per letter afgaan.
