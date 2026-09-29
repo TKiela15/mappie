@@ -68,7 +68,7 @@ header {
   grid-template-rows: repeat(3, max-content);
   grid-area: header;
 
-  label {
+  form {
     justify-self: end;
     padding-right: 2rem;
   }
@@ -138,8 +138,8 @@ main {
 }
 
 section:nth-of-type(1) {
-  padding-top: 100px;
-  margin: 20px;
+  padding-top: var(--whitespace-l);
+  margin: var(--whitespace-s);
   img {
     width: 100%;
     transition: 0.2s;
@@ -157,7 +157,7 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
-  margin: 20px;
+  margin: var(--whitespace-s);
   img {
     width: 100%;
     transition: 0.2s;
@@ -173,8 +173,8 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(3) {
-  padding-top: 100px;
-  margin: 20px;
+  padding-top: var(--whitespace-l);
+  margin: var(--whitespace-s);
   img {
     width: 100%;
     transition: 0.2s;
@@ -190,7 +190,7 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(4) {
-  margin: 20px;
+  margin: var(--whitespace-s);
   img {
     width: 100%;
     transition: 0.2s;
@@ -206,8 +206,8 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(5) {
-  padding-top: 100px;
-  margin: 20px;
+  padding-top: var(--whitespace-l);
+  margin: var(--whitespace-s);
   img {
     width: 100%;
     transition: 0.2s;
@@ -224,7 +224,7 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(6) {
-  margin: 20px;
+  margin: var(--whitespace-s);
   img {
     width: 100%;
     transition: 0.2s;
@@ -269,4 +269,8 @@ section:nth-of-type(6) {
 
 footer {
   grid-area: footer;
+
+  p {
+    color: var(--color);
+  }
 }
