@@ -101,20 +101,9 @@
       <img src="./assets/images/banner-patroontje.svg" alt="" />
     </main>
 
-    <button commandfor="new-joke" command="show-modal">nieuwe joke</button>
-
-    <!-- DE MODAL DIALOG -->
-    <dialog id="new-joke" class="modal">
-      <form method="dialog">
-        <h2>Cookies</h2>
-        <label language="en">setup line<input type="text" /></label>
-        <label language="en">punch line<input type="text" /></label>
-        <label>je naam<input type="text" /></label>
-
-        <button aria-label="sluit cookie venster" class="close">X</button>
-        <button type="submit">indienen</button>
-      </form>
-    </dialog>
+    <section>
+      <button commandfor="new-joke" command="show-modal">nieuwe joke</button>
+    </section>
 
     <footer>
       <img src="./assets/images/banner-patroontje.svg" alt="" />
@@ -124,5 +113,17 @@
       </p>
       <p>[Copyleft 2026, all wrongs reversed]</p>
     </footer>
+
+    <dialog id="new-joke" class="modal">
+      <form method="dialog">
+        <h2>Cookies</h2>
+        <label language="nl">setup line<input type="text" /></label>
+        <label language="nl">punch line<input type="text" /></label>
+
+        <button aria-label="sluit cookie venster" class="close">X</button>
+        <button type="accept">accepteren</button>
+        <button type="accept">Weigeren</button>
+      </form>
+    </dialog>
   </body>
 </html>

@@ -309,38 +309,40 @@ section:nth-of-type(6) {
   }
 }
 
-dialog {
-  width: 50rem;
-  height: 20rem;
-  z-index: 2;
-}
-
-dialog::backdrop {
-  backdrop-filter: blur(0.5em);
-}
-
-/* bonus */
-/* zodat de content onder de dialog niet kan scrollen */
-html:has(header dialog:open) {
-  overflow: clip;
-  scrollbar-gutter: stable;
-}
-
-/*************************/
-/* DIALOG → BUTTON CLOSE */
-/*************************/
-
-dialog button.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 3em;
-  aspect-ratio: 1;
-  background-color: #a81916;
-}
-
 footer {
   grid-area: footer;
+  display: grid;
+  grid-template-rows: repeat(2, max-width);
+
+  dialog {
+    width: 50rem;
+    height: 20rem;
+    z-index: 2;
+  }
+
+  dialog::backdrop {
+    backdrop-filter: blur(0.5em);
+  }
+
+  /* bonus */
+  /* zodat de content onder de dialog niet kan scrollen */
+  html:has(header dialog:open) {
+    overflow: clip;
+    scrollbar-gutter: stable;
+  }
+
+  /*************************/
+  /* DIALOG → BUTTON CLOSE */
+  /*************************/
+
+  dialog button.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3em;
+    aspect-ratio: 1;
+    background-color: #a81916;
+  }
 
   p {
     color: var(--color);
