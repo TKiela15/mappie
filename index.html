@@ -101,28 +101,20 @@
       <img src="./assets/images/banner-patroontje.svg" alt="" />
     </main>
 
-    <!-- DE BUTTON -->
+    <button commandfor="new-joke" command="show-modal">nieuwe joke</button>
 
-    <!-- <button commandfor="Cookies" command="show-modal">Cookies</button> -->
-    <dialog>
-      <form method="dialog">
-        <input type="text" />
-        <button formmethod="dialog" type="submit">Cancel</button>
-        <button type="submit">Submit</button>
-      </form>
-    </dialog>
-
-    <!-- DE MODELESS DIALOG -->
-    <!-- <dialog open>
+    <!-- DE MODAL DIALOG -->
+    <dialog id="new-joke" class="modal">
       <form method="dialog">
         <h2>Cookies</h2>
-        <button class="close" aria-label="sluit hulp">X</button>
-        <p>
-          Al onze mederwerkers zijn bezig. Je kunt alvast met het gesprek
-          starten. We zijn spoedig bij u.
-        </p>
+        <label language="en">setup line<input type="text" /></label>
+        <label language="en">punch line<input type="text" /></label>
+        <label>je naam<input type="text" /></label>
+
+        <button aria-label="sluit cookie venster" class="close">X</button>
+        <button type="submit">indienen</button>
       </form>
-    </dialog> -->
+    </dialog>
 
     <footer>
       <img src="./assets/images/banner-patroontje.svg" alt="" />

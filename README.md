@@ -134,3 +134,14 @@ CHECK-OUT
 - Met de Tab-toets kun je van item naar item navigeren.
 - Met shift+Tab kun je van richting wisselen bij het switchen van elementen.
 - Met de pijltjes kun je ook elementen selecteren, nog specifieker, zelfs woorden per letter afgaan.
+
+### WOE 30/9
+
+- Waar staat WCAG en A11y voor?
+  Web Content Accesibility Guidelines (regels rondom toegankelijkheid online) en A11y is een Accesibility project rondom toegankelijkheid vanuit en voor communities met beperkingen.
+- Wat vind je lastiger, je laptop/websites alleen met een toetsenbord bedienen of met een screenreader? Waarom? Waar moet je nog mee oefenen?
+  Alleen met screenreader, het verloopt minder soepel als het gaat om dingen en het duurde langer om te zien wat ermee mogelijk was.
+- Met welke beperking rekening houden vind je het meest lastig?
+  Vind je dat je beperkt wordt in wat je kunt ontwerpen?
+  Of heb je al manieren gevonden om vanuit een solide basis - die voor iedereen toegankelijk is - allemaal leuke en mooie extra's toe te voegen als je bezoekers dat goed vinden?
+  Screenreader, ik vind het bijvoorbeeld soms lastig om te bepalen in hoeverre ik een element moet beschrijven en waar ik bijvoorbeeld extra aria-labels moet toevoegen en dit moet je ook allemaal nagaan met de screenreader.

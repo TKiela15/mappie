@@ -6,8 +6,8 @@
 //   document.body.classList.add("kolom");
 // }
 
-const dialog = document.querySelector("dialog");
-dialog.show(); // Opens a non-modal dialog
+// const dialog = document.querySelector("dialog");
+// dialog.show(); // Opens a non-modal dialog
 
-const dialog = document.querySelector("dialog");
-dialog.close(); // Closes the dialog
+// const dialog = document.querySelector("dialog");
+// dialog.close(); // Closes the dialog

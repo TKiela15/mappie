@@ -309,42 +309,34 @@ section:nth-of-type(6) {
   }
 }
 
-/* dialog button.close {
-  /* STAP 3. */
-/* JOUW CODE HIER */
-/* rechtsboven in dialog (dialog is al fixed) */
-/* qua maat 3em x 3em */
+dialog {
+  width: 50rem;
+  height: 20rem;
+  z-index: 2;
+}
 
-/* position: absolute;
+dialog::backdrop {
+  backdrop-filter: blur(0.5em);
+}
+
+/* bonus */
+/* zodat de content onder de dialog niet kan scrollen */
+html:has(header dialog:open) {
+  overflow: clip;
+  scrollbar-gutter: stable;
+}
+
+/*************************/
+/* DIALOG → BUTTON CLOSE */
+/*************************/
+
+dialog button.close {
+  position: absolute;
   top: 0;
   right: 0;
   width: 3em;
   aspect-ratio: 1;
-}  */
-
-/**************************/
-/* MAIN DIALOG → POSITION */
-/**************************/
-
-/* main dialog {
-  /* STAP 5. */
-/* JOUW CODE HIER */
-/* fixed → right en bottom (left auto maken) */
-/* z-index (hoger dan 1) */
-/* position: fixed;
-  right: var(--whitespace);
-  bottom: var(--whitespace);
-  left: auto;
-
-  z-index: 3;
-}  */
-
-dialog {
-  z-index: 3;
-  margin-top: 10px;
-  background: green;
-  border: none;
-  border-radius: 1rem;
+  background-color: #a81916;
 }
 
 footer {
