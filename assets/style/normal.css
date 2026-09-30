@@ -68,19 +68,41 @@ header {
   grid-template-rows: repeat(3, max-content);
   grid-area: header;
 
-  form {
-    justify-self: end;
-    padding-right: 2rem;
+  p::selection {
+    color: red;
+    background-color: yellow;
   }
 
-  img {
-    width: 100%;
-    height: var(--whitespace-xl);
-    padding-top: var(--whitespace-l);
-    padding-bottom: var(--whitespace-l);
+  nav {
+    ul {
+      z-index: 1;
 
-    grid-column: 1;
-    grid-row: 3;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-2);
+      display: flex;
+      justify-content: end;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    ul li a {
+      display: block;
+      color: var(--color);
+      padding: 1rem;
+      padding-right: 5rem;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      background-color: #463b88;
+    }
+
+    ul li a.active {
+      background-color: #463b88;
+    }
   }
 
   h1 {
@@ -96,6 +118,11 @@ header {
     grid-column: 1;
     grid-row: 3;
 
+    &::selection {
+      color: red;
+      background-color: yellow;
+    }
+
     @media (width > 70em) {
       padding-left: 24rem;
     }
@@ -103,8 +130,34 @@ header {
 
   h2 {
     color: var(--color);
-    padding: 20px;
+    padding: var(--whitespace-s);
     margin: 0;
+
+    &::selection {
+      color: red;
+      background-color: yellow;
+    }
+
+    z-index: 2;
+    position: fixed;
+  }
+
+  form {
+    color: var(--color);
+    justify-self: end;
+    padding-right: 2rem;
+    /* grid-row: 2; */
+    padding-top: var(--whitespace-m);
+  }
+
+  img {
+    width: 100%;
+    height: var(--whitespace-xl);
+    padding-top: var(--whitespace-l);
+    padding-bottom: var(--whitespace-l);
+
+    grid-column: 1;
+    grid-row: 3;
   }
 }
 
@@ -239,38 +292,53 @@ section:nth-of-type(6) {
   }
 }
 
-/* dialog { */
-/* styling van de dialog*/
+/* dialog button.close {
+  /* STAP 3. */
+/* JOUW CODE HIER */
+/* rechtsboven in dialog (dialog is al fixed) */
+/* qua maat 3em x 3em */
 
-/* &::backdrop {
-    background-color: #fff6; /* transparant wit - natuurlijk beter om hier een light-dark() custom property te gebruiken */
-/* backdrop-filter: blur(2px); */
-/* px gebruiken voor blur is 👍 :) */
-/* } */
-/* } */
+/* position: absolute;
+  top: 0;
+  right: 0;
+  width: 3em;
+  aspect-ratio: 1;
+}  */
 
-/* html:has(dialog:open) {
-  overflow-y: clip;
-} */
+/**************************/
+/* MAIN DIALOG → POSITION */
+/**************************/
 
-/* button {
-  padding: 1em;
+/* main dialog {
+  /* STAP 5. */
+/* JOUW CODE HIER */
+/* fixed → right en bottom (left auto maken) */
+/* z-index (hoger dan 1) */
+/* position: fixed;
+  right: var(--whitespace);
+  bottom: var(--whitespace);
+  left: auto;
 
-  appearance: block;
-  background-color: grey;
+  z-index: 3;
+}  */
+
+dialog {
+  z-index: 3;
+  margin-top: 10px;
+  background: green;
   border: none;
-  border-radius: 0.5em;
-
-  color: var(--clr-button);
-  font-family: "Euripides";
-  font-size: 1.5em;
-  font-weight: 700;
-} */
+  border-radius: 1rem;
+}
 
 footer {
   grid-area: footer;
 
   p {
     color: var(--color);
+  }
+
+  p::selection {
+    color: red;
+    background-color: yellow;
   }
 }
