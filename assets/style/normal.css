@@ -92,16 +92,33 @@ header {
       display: block;
       color: var(--color);
       padding: 1rem;
-      padding-right: 5rem;
+      padding-right: var(--whitespace-l);
+      padding-left: var(--whitespace-l);
       text-decoration: none;
     }
 
     ul li a:hover {
       background-color: #463b88;
+      text-decoration: underline;
+      transform: scale(1.4);
+
+      border: 1px solid;
+      outline: 3px solid;
+      outline-offset: 0px;
     }
 
     ul li a.active {
       background-color: #463b88;
+    }
+
+    ul li a:focus {
+      /* outline-style: solid;
+      outline-color: #fff990; */
+      outline: 5px solid red;
+      outline-offset: 0px;
+      background-color: yellow;
+      color: red;
+      /* font-weight? */
     }
   }
 
