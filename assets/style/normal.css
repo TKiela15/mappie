@@ -207,7 +207,7 @@ main {
   }
 }
 
-section:nth-of-type(1) {
+main > section:nth-of-type(1) {
   padding-top: var(--whitespace-l);
   margin: var(--whitespace-s);
   img {
@@ -226,7 +226,7 @@ section:nth-of-type(1) {
   }
 }
 
-section:nth-of-type(2) {
+main > section:nth-of-type(2) {
   margin: var(--whitespace-s);
   img {
     width: 100%;
@@ -242,7 +242,7 @@ section:nth-of-type(2) {
   }
 }
 
-section:nth-of-type(3) {
+main > section:nth-of-type(3) {
   padding-top: var(--whitespace-l);
   margin: var(--whitespace-s);
   img {
@@ -259,7 +259,7 @@ section:nth-of-type(3) {
   }
 }
 
-section:nth-of-type(4) {
+main > section:nth-of-type(4) {
   margin: var(--whitespace-s);
   img {
     width: 100%;
@@ -275,7 +275,7 @@ section:nth-of-type(4) {
   }
 }
 
-section:nth-of-type(5) {
+main > section:nth-of-type(5) {
   padding-top: var(--whitespace-l);
   margin: var(--whitespace-s);
   img {
@@ -293,7 +293,7 @@ section:nth-of-type(5) {
   }
 }
 
-section:nth-of-type(6) {
+main > section:nth-of-type(6) {
   margin: var(--whitespace-s);
   img {
     width: 100%;
@@ -312,30 +312,66 @@ section:nth-of-type(6) {
 footer {
   grid-area: footer;
   display: grid;
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(4, max-content);
+}
 
-  dialog {
-    width: 50rem;
-    height: 20rem;
-    z-index: 2;
+section {
+  justify-self: end;
+  padding: var(--whitespace-s);
+}
+
+button {
+  width: 18em;
+  height: 3em;
+  background-color: #a81916;
+  font-family: "Euripides";
+  font-size: var(--whitespace-s);
+  font-weight: 700;
+  color: var(--color);
+  border-radius: 15px;
+  padding: 0;
+}
+
+dialog button.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3em;
+  aspect-ratio: 1;
+  background-color: #a81916;
+}
+
+p {
+  color: var(--color);
+
+  p::selection {
+    color: red;
+    background-color: yellow;
   }
+}
 
-  dialog::backdrop {
-    backdrop-filter: blur(0.5em);
-  }
+dialog {
+  width: 50rem;
+  height: 20rem;
+  z-index: 2;
+}
 
-  /* bonus */
-  /* zodat de content onder de dialog niet kan scrollen */
-  html:has(header dialog:open) {
-    overflow: clip;
-    scrollbar-gutter: stable;
-  }
+dialog::backdrop {
+  backdrop-filter: blur(0.5em);
+}
 
-  /*************************/
-  /* DIALOG → BUTTON CLOSE */
-  /*************************/
+/* bonus */
+/* zodat de content onder de dialog niet kan scrollen */
+html:has(header dialog:open) {
+  overflow: clip;
+  scrollbar-gutter: stable;
+}
 
-  dialog button.close {
+/*************************/
+/* DIALOG → BUTTON CLOSE */
+/*************************/
+
+/* dialog button.close {
     position: absolute;
     top: 0;
     right: 0;
@@ -352,4 +388,4 @@ footer {
     color: red;
     background-color: yellow;
   }
-}
+} */
