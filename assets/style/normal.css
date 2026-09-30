@@ -312,7 +312,7 @@ section:nth-of-type(6) {
 footer {
   grid-area: footer;
   display: grid;
-  grid-template-rows: repeat(2, max-width);
+  grid-template-rows: repeat(3, max-content);
 
   dialog {
     width: 50rem;
