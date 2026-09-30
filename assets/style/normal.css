@@ -10,6 +10,26 @@ html {
   --whitespace-m: 5rem;
   --whitespace-l: 6rem;
   --whitespace-xl: 45rem;
+
+  --step-0: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
+  --step-1: clamp(1.2rem, 0.975rem + 1vw, 1.875rem);
+  --step-2: clamp(1.44rem, 0.9825rem + 2.0333vw, 2.8125rem);
+  --step-3: clamp(1.728rem, 0.8978rem + 3.69vw, 4.2188rem);
+  --step-4: clamp(2.0736rem, 0.6554rem + 6.303vw, 6.3281rem);
+  --step-5: clamp(2.4883rem, 0.1537rem + 10.3761vw, 9.4922rem);
+
+  /* h1 {
+    font-size: var(--step-4);
+  }
+  h2 {
+    font-size: var(--step-3);
+  }
+  h3 {
+    font-size: var(--step-2);
+  }
+  h4 {
+    font-size: var(--step-1);
+  } */
 }
 
 /* Dit stukje has() geeft aan dat als de lichte optie is gekozen (toggle checked), je met color-scheme kunt aangeven dat het lichte thema actief is. Hetzelfde geldt voor de donkere optie.  */
@@ -29,25 +49,18 @@ html:has([value="dark-theme"]:checked) {
 }
 
 @font-face {
+  font-family: "Euripides";
+  src: url("../type/Euripides.woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
   font-family: "Smokum";
   src: url("../type/Smokum-Regular.ttf");
   font-weight: 700;
   font-style: normal;
 }
-
-@font-face {
-  font-family: "Smokum";
-  src: url("../type/Euripides-SemiBold_web.woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* @font-face {
-  font-family: "Euripides, sans-serif";
-  src: url("../type/Euripides.woff");
-  font-weight: 400px;
-  font-style: normal;
-} */
 
 body {
   display: grid;
@@ -125,7 +138,7 @@ header {
   h1 {
     font-family: "Euripides", sans-serif;
     font-weight: 700;
-    font-size: var(--whitespace-m);
+    font-size: var(--step-4);
     color: var(--color);
 
     padding-bottom: 120px;
@@ -148,6 +161,7 @@ header {
   h2 {
     color: var(--color);
     padding: var(--whitespace-s);
+    font-weight: var(--step-0);
     margin: 0;
 
     &::selection {
@@ -330,6 +344,7 @@ button {
   color: var(--color);
   border-radius: 15px;
   padding: 0;
+  margin: 1em;
 }
 
 dialog button.close {
