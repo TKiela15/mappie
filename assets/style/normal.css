@@ -401,11 +401,11 @@ footer {
   }
 
   button {
-    width: 18em;
+    width: 10em;
     height: 3em;
     background-color: var(--background-2);
     font-family: "Euripides";
-    font-size: var(--whitespace-xs);
+    font-size: var(--step-1);
     font-weight: 700;
     color: var(--color);
     border-radius: 15px;
