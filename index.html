@@ -25,27 +25,55 @@
       <nav>
         <ul>
           <li><a href="#">Digitaal Tuintje van tessa</a></li>
-          <li><a href="http://127.0.0.1:5500/">[Home]</a></li>
-          <li><a href="/log.html">[Log]</a></li>
-          <li><a href="/story.html">[Story]</a></li>
-          <li><a href="/contact.html">[Contact]</a></li>
+          <li>
+            <a
+              aria-label="Link_naar_de_hoofdpagina"
+              href="http://127.0.0.1:5500/"
+              >[Home]</a
+            >
+          </li>
+          <li>
+            <a
+              aria-label="Link_naar_Github_account"
+              href="https://github.com/TKiela15"
+              >[Log]</a
+            >
+          </li>
+          <li><a aria-label="#" href="/story.html">[Story]</a></li>
+          <li><a aria-label="#" href="/contact.html">[Contact]</a></li>
         </ul>
       </nav>
 
       <!-- 3 radio buttons, door dezelfe 'name' te gebruiken horen ze bij elkaar en kan er steeds maar één geselecteerd worden, :checked kijkt of een checkbox of radio button geselecteerd is. -->
-      <form aria-label="knoppen voor instellen van light of dark mode">
+      <form aria-label="knoppen_voor_instellen_van_light_of_dark_mode">
         <label>
-          <input type="radio" name="theme" value="auto-theme" checked />
+          <input
+            aria-label="knop_voor_auto_thema"
+            type="radio"
+            name="theme"
+            value="auto-theme"
+            checked
+          />
           auto</label
         >
 
         <label>
-          <input type="radio" name="theme" value="light-theme" />
+          <input
+            aria-label="knop_voor_licht_thema"
+            type="radio"
+            name="theme"
+            value="light-theme"
+          />
           licht
         </label>
 
         <label>
-          <input type="radio" name="theme" value="dark-theme" />
+          <input
+            aria-label="knop_voor_donker_thema"
+            type="radio"
+            name="theme"
+            value="dark-theme"
+          />
           donker
         </label>
       </form>
@@ -63,41 +91,62 @@
 
       <section>
         <a href="https://pointerpointer.com">
-          <img src="./assets/images/frida-hoofd-II.png" alt="Hoofd van Frida" />
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="afbeelding_hoofd_van_Frida"
+          />
         </a>
       </section>
 
       <section>
         <a href="pagina.html">
-          <img src="./assets/images/frida-hoofd-II.png" alt="Hoofd van Frida" />
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="afbeelding_hoofd_van_Frida"
+          />
         </a>
       </section>
 
       <section>
         <a href="https://pointerpointer.com">
-          <img src="./assets/images/frida-hoofd-II.png" alt="Hoofd van Frida" />
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="afbeelding_hoofd_van_Frida"
+          />
         </a>
       </section>
 
       <section>
         <a href="https://pointerpointer.com">
-          <img src="./assets/images/frida-hoofd-II.png" alt="Hoofd van Frida" />
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="afbeelding_hoofd_van_Frida"
+          />
         </a>
       </section>
 
       <section>
         <a href="https://pointerpointer.com">
-          <img src="./assets/images/frida-hoofd-II.png" alt="Hoofd van Frida" />
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="afbeelding_hoofd_van_Frida"
+          />
         </a>
       </section>
 
       <section>
         <a href="https://pointerpointer.com">
-          <img src="./assets/images/frida-hoofd-II.png" alt="Hoofd van Frida" />
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="afbeelding_hoofd_van_Frida"
+          />
         </a>
       </section>
 
-      <img src="./assets/images/banner-patroontje.svg" alt="" />
+      <img
+        src="./assets/images/banner-patroontje.svg"
+        alt="afbeelding_hoofd_van_Frida"
+      />
     </main>
 
     <footer>
@@ -106,45 +155,72 @@
       <section>
         <p>
           Deze website gebruikt het lettertype 'Euripides', ontworpen door
-          <a href="https://tanvi.network/" alt=""> Tanvi</a>
+          <a
+            aria-label="link_naar_portfolio_website_van_Tanvi"
+            href="https://tanvi.network/"
+            alt=""
+          >
+            Tanvi</a
+          >
         </p>
       </section>
 
       <section>
         <p>[Copyleft 2026, all wrongs reversed]</p>
-        <a href="https://digitaaltuintje.nl"
+        <a
+          aria-label="link_naar_webpagina_met_website_links"
+          href="https://digitaaltuintje.nl"
           >Bekijk nog meer digitale tuintjes :p</a
         >
       </section>
 
       <section>
-        <button commandfor="new-joke" command="show-modal">Cookies</button>
+        <button
+          aria-label="knop_naar_cookievenster"
+          commandfor="new-joke"
+          command="show-modal"
+        >
+          Cookies
+        </button>
       </section>
 
       <img src="./assets/images/banner-patroontje.svg" alt="" />
     </footer>
 
     <dialog id="new-joke" class="modal">
-
       <form method="dialog">
         <label> <h3>Cookies</h3></label>
-        <label><img src="./assets/images/eyebrows.svg" alt="foto ogen frida" /></label>
-       <label><p>
-          Deze website wordt gehost vanaf
-          <a
-            href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
-          >
-            Github Pages.</a
-          > Klik je op accepteren? Dan ga je ermee akkoord dat Github bepaalde gegevens
-          van jou kan verwerken, zoals bijvoorbeeld je IP-adres. (Github
-          gebruikt deze gegevens voor o.a. beveiliging van de website) <p>Deze website
-          maakt zelf geen gebruik van cookies.</p>
-        </p></label>
-        
+        <label
+          ><img src="./assets/images/eyebrows.svg" alt="foto_ogen_frida"
+        /></label>
+        <label
+          ><p>
+            Deze website wordt gehost vanaf
+            <a
+              aria-label="link_naar_Github_webpagina"
+              href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+            >
+              Github Pages.</a
+            >
+            Klik je op accepteren? Dan ga je ermee akkoord dat Github bepaalde
+            gegevens van jou kan verwerken, zoals bijvoorbeeld je IP-adres.
+            (Github gebruikt deze gegevens voor o.a. beveiliging van de website)
+          </p>
+
+          <p>Deze website maakt zelf geen gebruik van cookies.</p></label
+        >
+
         <button aria-label="sluit cookie venster" class="close">X</button>
-        <label><button type="accept">Accepteren</button></label>
-        <label><button type="accept">Weigeren</button></label>
-        
+        <label
+          ><button aria-label="Accepteer cookies" type="accept">
+            Accepteren
+          </button></label
+        >
+        <label
+          ><button aria-label="Weiger cookies" type="accept">
+            Weigeren
+          </button></label
+        >
       </form>
     </dialog>
   </body>
