@@ -30,11 +30,12 @@ html {
   --background-2: light-dark(#bd4839, #a81916);
   --color: light-dark(#fff990, whitesmoke);
 
-  --whitespace-xs: 1rem;
-  --whitespace-s: 2rem;
-  --whitespace-m: 5rem;
-  --whitespace-l: 6rem;
-  --whitespace-xl: 45rem;
+  --whitespace-xxs: 1em;
+  --whitespace-xs: 2em;
+  --whitespace-s: 3em;
+  --whitespace-m: 5em;
+  --whitespace-l: 10em;
+  --whitespace-xl: 20em;
 
   --step-0: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
   --step-1: clamp(1.2rem, 0.975rem + 1vw, 1.875rem);
@@ -42,19 +43,6 @@ html {
   --step-3: clamp(1.728rem, 0.8978rem + 3.69vw, 4.2188rem);
   --step-4: clamp(2.0736rem, 0.6554rem + 6.303vw, 6.3281rem);
   --step-5: clamp(2.4883rem, 0.1537rem + 10.3761vw, 9.4922rem);
-
-  /* h1 {
-    font-size: var(--step-4);
-  }
-  h2 {
-    font-size: var(--step-3);
-  }
-  h3 {
-    font-size: var(--step-2);
-  }
-  h4 {
-    font-size: var(--step-1);
-  } */
 }
 
 /* Dit stukje has() geeft aan dat als de lichte optie is gekozen (toggle checked), je met color-scheme kunt aangeven dat het lichte thema actief is. Hetzelfde geldt voor de donkere optie.  */
@@ -89,8 +77,9 @@ header {
   grid-template-columns: 5fr 4fr;
   grid-template-rows: max-content 5fr 3fr;
   grid-template-areas: "nav nav" "a b" "c d";
-  gap: var(--whitespace-xs);
+  gap: var(--whitespace-xxs);
 
+  /* MARK: Nav-bar */
   nav {
     position: sticky;
     top: 0;
@@ -107,7 +96,7 @@ header {
       grid-template-columns: 1fr 1fr 1fr;
 
       grid-template-areas:
-        "tuintje home  log"
+        "tuintje home log"
         "tuintje story contact";
 
       @media (width > 42.5rem) {
@@ -138,8 +127,6 @@ header {
       display: block;
       color: var(--color);
       padding: 1rem;
-      /* padding-right: var(--whitespace-l); */
-      /* padding-left: var(--whitespace-l); */
       text-decoration: none;
 
       &:hover {
@@ -173,10 +160,11 @@ header {
     }
 
     ul li a:nth-of-type(1) {
-      width: 5em;
+      width: var(--whitespace-m);
     }
   }
 
+  /* dark/light mode form */
   form {
     grid-area: a/a/b/b;
     color: var(--color);
@@ -205,6 +193,7 @@ header {
     }
   }
 
+  /* portret frida */
   img {
     grid-area: a/a/d/d;
 
@@ -214,9 +203,6 @@ header {
 
     justify-self: center;
     align-self: center;
-    /* height: var(--whitespace-xl); */
-    /* padding-top: var(--whitespace-l); */
-    /* padding-bottom: var(--whitespace-l); */
   }
 }
 
@@ -232,6 +218,18 @@ main {
 
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 
+  /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* decoratieve banners */
   img {
     width: 100%;
     grid-column: 1/-1;
@@ -252,9 +250,11 @@ main {
 
 /* MARK: main -> sections */
 
+/* 1e hoofd */
 main > section:nth-of-type(1) {
-  padding-top: var(--whitespace-l);
-  margin: var(--whitespace-xs);
+  padding-top: var(--whitespace-m);
+  margin: var(--whitespace-xxs);
+
   img {
     width: 100%;
     transition: 0.2s;
@@ -271,8 +271,9 @@ main > section:nth-of-type(1) {
   }
 }
 
+/* 2e hoofd */
 main > section:nth-of-type(2) {
-  margin: var(--whitespace-xs);
+  margin: var(--whitespace-xxs);
   img {
     width: 100%;
     transition: 0.2s;
@@ -287,9 +288,10 @@ main > section:nth-of-type(2) {
   }
 }
 
+/* 3e hoofd */
 main > section:nth-of-type(3) {
-  padding-top: var(--whitespace-l);
-  margin: var(--whitespace-xs);
+  padding-top: var(--whitespace-m);
+  margin: var(--whitespace-xxs);
   img {
     width: 100%;
     transition: 0.2s;
@@ -304,8 +306,9 @@ main > section:nth-of-type(3) {
   }
 }
 
+/* 4e hoofd */
 main > section:nth-of-type(4) {
-  margin: var(--whitespace-xs);
+  margin: var(--whitespace-xxs);
   img {
     width: 100%;
     transition: 0.2s;
@@ -320,9 +323,11 @@ main > section:nth-of-type(4) {
   }
 }
 
+/* bron: cbshvjasvhjvsk j */
+/* 5e hoofd */
 main > section:nth-of-type(5) {
-  padding-top: var(--whitespace-l);
-  margin: var(--whitespace-xs);
+  padding-top: var(--whitespace-m);
+  margin: var(--whitespace-xxs);
   img {
     width: 100%;
     transition: 0.2s;
@@ -338,8 +343,9 @@ main > section:nth-of-type(5) {
   }
 }
 
+/* 6e hoofd */
 main > section:nth-of-type(6) {
-  margin: var(--whitespace-xs);
+  margin: var(--whitespace-xxs);
   img {
     width: 100%;
     transition: 0.2s;
@@ -371,14 +377,15 @@ footer {
     color: var(--color);
     padding-left: 50px;
 
+    /* accesibility */
     &::selection {
       color: red;
       background-color: yellow;
     }
   }
 
+  /* section met tekst */
   section:first-of-type {
-    color: pink;
     padding-left: 50px;
   }
 
@@ -388,12 +395,13 @@ footer {
   }
 
   section:nth-of-type(3) {
-    padding: var(--whitespace-xs);
+    padding: var(--whitespace-xxs);
   }
 
+  /* section met button */
   section:nth-of-type(4) {
     justify-self: end;
-    padding: var(--whitespace-xs);
+    padding: var(--whitespace-xxs);
   }
 
   img {
@@ -417,8 +425,6 @@ footer {
 dialog {
   width: 600px;
   height: 400px;
-  /* width: max-content;
-  height: max-content; */
   z-index: 2;
   background-color: antiquewhite;
 
@@ -435,6 +441,7 @@ dialog {
     background-color: var(--background-2);
   }
 
+  /* MARK: dialog -> grid */
   form {
     width: 100%;
     height: 100%;
@@ -447,6 +454,7 @@ dialog {
       "text text"
       "ja nee";
 
+    /* h3 */
     label:first-of-type {
       grid-area: h3;
       padding: 1em;
@@ -462,16 +470,18 @@ dialog {
       }
     }
 
+    /* img eyebrows */
     label:nth-of-type(2) {
       grid-area: img;
 
       img {
         width: 100%;
-        padding-top: 4em;
+        padding-top: 5em;
         /* margin-top: 2em;  */
       }
     }
 
+    /* <p> */
     label:nth-of-type(3) {
       grid-area: text;
       padding: 1em;
@@ -482,6 +492,7 @@ dialog {
         font-size: 1.5em;
       }
 
+      /* losse zin <p> */
       p:nth-of-type(2) {
         color: var(--background-2);
         grid-area: text;
@@ -507,7 +518,7 @@ dialog {
 
     label:nth-of-type(5) {
       grid-area: nee;
-      padding: 3em;
+      padding: 2em;
 
       /* =weigeren */
       button {
@@ -520,37 +531,3 @@ dialog {
     }
   }
 }
-
-/* form {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "h3 img"
-    "text text"
-    "ja nee";
-} */
-
-/*************************/
-/* DIALOG → BUTTON CLOSE */
-/*************************/
-
-/* dialog button.close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 3em;
-    aspect-ratio: 1;
-    background-color: #a81916;
-  }
-
-  p {
-    color: var(--color);
-  }
-
-  p::selection {
-    color: red;
-    background-color: yellow;
-  }
-} */
