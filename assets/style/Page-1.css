@@ -1,15 +1,28 @@
 body {
-  background-color: aquamarine;
-}
-/* 
-header {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  padding: 0;
+  margin: 0;
 
+  background-color: #6c7bc6;
+}
+
+header {
+  grid-area: header;
 }
 
 main {
-
+  grid-area: main;
 }
 
 footer {
+  grid-area: footer;
+}
 
-} */
+img {
+  width: 200px;
+}

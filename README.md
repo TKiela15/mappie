@@ -7,15 +7,15 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 ### MA 31 aug - Kickoff
 
 -> Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
--> Alle stappen doorlopen om aan de slag te kunnen met de Digital Garden; Domeinnaam, Github, VSCodium en dit ook allemaal koppelen aan elkaar.
+-> Alle stappen doorlopen om aan de slag te kunnen met de Digital Garden; Domeinnaam, Github, VSCodium en dit ook allemaal gekoppeld aan elkaar.
 
--> Checkout:
+CHECK-OUT:
 
-1. Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.
+1.  Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.
 
 Een source hosting platform is een platform/provider waar je als ‘gast’ jouw website vanaf kunt publiceren op het internet. Hierin schrijf/bewerk je de code.
 
-2. Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.
+2.  Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.
 
 - T-kiela, deze naam heb ik geregistreerd bij TransIP. (TransIP = de partij die internet registratie voor jou regelt)
 - Kale domeinnaam koppelen aan de servers van Github. (DNS = verwijst naar source hosting platform, Github dus)
@@ -26,7 +26,7 @@ Een source hosting platform is een platform/provider waar je als ‘gast’ jouw
 
 Door je code aan te passen in VSCodium en op te slaan, je website wordt dan geüpdate.
 
-### WOE 2/9 - Deep dives
+### WOE - Deep dives
 
 - HTML & CSS BASICS (Justus)
   Aantekeningen:
@@ -47,7 +47,9 @@ Door je code aan te passen in VSCodium en op te slaan, je website wordt dan geü
   <img src="./assets/images/schetsen deep dive.jpeg" >
   <img src="./assets/images/aantekeningen schetsen deep dive.jpeg" >
 
-### MA 7/9 - SPRINT1
+#### SPRINT1
+
+### MA 7/9
 
 - Artikelen
 - Bestaande digital Gardens bekijken
