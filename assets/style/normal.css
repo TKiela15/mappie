@@ -373,16 +373,16 @@ footer {
   display: grid;
   grid-template-rows: repeat(auto, max-content);
 
- p {
+  p {
     color: var(--color);
     padding-left: 50px;
 
-  /* accesibility */
- &::selection {
+    /* accesibility */
+    &::selection {
       color: red;
       background-color: yellow;
     }
-  } 
+  }
 
   /* section met tekst */
   section:first-of-type {
@@ -392,17 +392,17 @@ footer {
   section:nth-of-type(2) {
     color: blue;
     padding-left: 50px;
-  } 
+  }
 
   section:nth-of-type(3) {
     padding: var(--whitespace-xxs);
-  } 
+  }
 
   /* section met button */
   section:nth-of-type(4) {
     justify-self: end;
     padding: var(--whitespace-xxs);
-  } 
+  }
 
   img {
     display: block;
@@ -410,7 +410,7 @@ footer {
     height: auto;
     padding: 0;
     margin: 0;
-  } 
+  }
 
   button {
     width: 10em;
@@ -424,7 +424,7 @@ footer {
     padding: 0;
     margin: 1em;
   }
-} 
+}
 
 dialog {
   width: 600px;
@@ -434,16 +434,16 @@ dialog {
 
   &::backdrop {
     backdrop-filter: blur(0.5em);
-  } 
+  }
 
-   button.close {
+  button.close {
     position: absolute;
     top: 0;
     right: 0;
     width: 3em;
     aspect-ratio: 1;
     background-color: var(--background-2);
-  } 
+  }
 
   /* MARK: dialog -> grid */
   form {
@@ -456,14 +456,14 @@ dialog {
     grid-template-areas:
       "h3 img"
       "text text"
-      "ja nee"; 
+      "ja nee";
 
     /* h3 */
     label:first-of-type {
       grid-area: h3;
       padding: 1em;
-      display: flex; */
-      /* padding: 1em; */
+      display: flex;
+      padding: 1em;
 
       h3 {
         font-size: var(--step-3);
@@ -475,15 +475,15 @@ dialog {
     }
 
     /* img eyebrows */
-  label:nth-of-type(2) {
+    label:nth-of-type(2) {
       grid-area: img;
 
       img {
         width: 100%;
         padding-top: 5em;
-        /* margin-top: 2em;  */
+        margin-top: 2em;
       }
-    } 
+    }
 
     /* <p> */
     label:nth-of-type(3) {
@@ -513,15 +513,14 @@ dialog {
       button {
         width: 10em;
         height: 2em;
-        margin: 2em; */
+        margin: 2em;
         background-color: var(--background-2);
         color: var(--color);
         font-size: var(--step-0);
       }
     }
 
-
-  label:nth-of-type(5) {
+    label:nth-of-type(5) {
       grid-area: nee;
       padding: 2em;
       background-color: aqua;
