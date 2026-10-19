@@ -58,7 +58,7 @@ html:has([value="dark-theme"]:checked) {
 body {
   display: grid;
   margin: 0;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header"
     "main"
@@ -215,7 +215,7 @@ main {
   background-color: var(--background-2);
 
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(4, max-content);
 
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 
@@ -372,11 +372,10 @@ html:has(dialog:open) {
 footer {
   grid-area: footer;
   display: grid;
-  grid-template-rows: repeat(auto, 20px);
+  grid-template-rows: 200px 100px;
 }
 
-section:first-of-type {
-  background-color: purple;
+footer > section:first-of-type {
   align-content: end;
 
   img {
@@ -386,6 +385,21 @@ section:first-of-type {
   }
 }
 
-section:nth-of-type(2) {
+footer > section:nth-of-type(2) {
   background-color: #bd4839;
+
+  p {
+    display: block;
+    color: #fff990;
+    font-size: 10px;
+    text-align: right;
+    padding-right: var(--whitespace-m);
+  }
+
+  a {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+    padding-right: var(--whitespace-s);
+  }
 }
