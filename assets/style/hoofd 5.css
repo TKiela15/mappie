@@ -1,3 +1,70 @@
+/* MARK: fonts */
+@font-face {
+  font-family: "Euripides";
+  src: url("../type/Euripides.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euripides";
+  src: url("../type/Euripides.woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Smokum";
+  src: url("../type/Smokum-Regular.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* MARK: kleurtjes en zo */
+
+html {
+  color-scheme: light dark;
+
+  /* Met de light-dark() functie definieer je in één keer een lichte en donkere waarde voor je custom properties. */
+  --background: light-dark(#6c7bc6, #463b88);
+  --background-2: light-dark(#bd4839, #a81916);
+  --color: light-dark(#fff990, whitesmoke);
+
+  --whitespace-xxs: 1em;
+  --whitespace-xs: 2em;
+  --whitespace-s: 3em;
+  --whitespace-m: 5em;
+  --whitespace-l: 10em;
+  --whitespace-xl: 20em;
+
+  --step-0: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
+  --step-1: clamp(1.2rem, 0.975rem + 1vw, 1.875rem);
+  --step-2: clamp(1.44rem, 0.9825rem + 2.0333vw, 2.8125rem);
+  --step-3: clamp(1.728rem, 0.8978rem + 3.69vw, 4.2188rem);
+  --step-4: clamp(2.0736rem, 0.6554rem + 6.303vw, 6.3281rem);
+  --step-5: clamp(2.4883rem, 0.1537rem + 10.3761vw, 9.4922rem);
+}
+
 body {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  padding: 0;
+  margin: 0;
   background-color: var(--background);
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }
