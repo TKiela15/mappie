@@ -63,6 +63,57 @@ header {
 
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
+  grid-template-rows: repeat (4, 300px);
+}
+
+h1 {
+  display: block;
+  grid-column: 2/4;
+  grid-row: 1/2;
+
+  font-family: "Euripides", sans-serif;
+  font-size: var(--step-2);
+  color: var(--color);
+}
+
+main > section:first-of-type {
+  display: block;
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+
+main > section:nth-of-type(2) {
+  display: block;
+  grid-column: 5/6;
+  grid-row: 2/4;
+
+  p {
+    text-align: justify;
+    font-size: var(--step-0);
+    color: var(--color);
+    margin: 0;
+    font-family: "Euripides", sans-serif;
+  }
+}
+
+main > section:nth-of-type(3) {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  /* bron: https://www.google.com/goto?url=CAESaAHrOzAVNXF1kFPAFkzNZ8YxNZmbfEzodJBr8IdFcdAACnQeFcZ-oRsmu_mdKFVLkSEAxCRm9T8CGBoG0bpceXjK76FEiLcanHHZ7NGB7sFfmip_z9ohAccq2rZlD-QSipcc_CLKMZ7i */
+  position: relative;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    /* bron:https://www.google.com/goto?url=CAESbwHrOzAVK1sJInqXxF4d1G6oyt7tYK_DBNdNv1n6hld-qQ_0u18Z-3DG7XwrPSN9KTLmELid4HFuyKfbPC8ny4Prpe1mlbCa__F3c0huBP_j5lCuWrMrBt1n94Ga9QdNVbUO5cxJJwjk_ChCoPDgyA */
+    filter: opacity(0.5);
+  }
 }
 
 footer {
