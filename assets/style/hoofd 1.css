@@ -47,7 +47,7 @@ html {
 
 body {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 150px 2fr 150px;
   grid-template-areas:
     "header"
     "main"
@@ -59,34 +59,140 @@ body {
 
 header {
   grid-area: header;
+  height: 100dvh;
+
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: max-content 5fr 3fr;
+  grid-template-areas: "nav nav" "a b" "c d";
+  gap: var(--whitespace-xxs);
+  font-family: "Euripides", sans-serif;
+  /* MARK: Nav-bar */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--background-2);
+
+    grid-area: nav;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      grid-template-areas:
+        "tuintje home log"
+        "tuintje story contact";
+
+      @media (width > 42.5rem) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        grid-template-areas: "tuintje home log story contact";
+        align-items: center;
+      }
+    }
+
+    ul li:nth-of-type(1) {
+      grid-area: tuintje;
+    }
+    ul li:nth-of-type(2) {
+      grid-area: home;
+    }
+    ul li:nth-of-type(3) {
+      grid-area: log;
+    }
+    ul li:nth-of-type(4) {
+      grid-area: story;
+    }
+    ul li:nth-of-type(5) {
+      grid-area: contact;
+    }
+
+    ul li a {
+      display: block;
+      color: var(--color);
+      padding: 1rem;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #463b88;
+        text-decoration: underline;
+        transform: scale(1.4);
+
+        border: 1px solid;
+        outline: 3px solid;
+        outline-offset: 0px;
+      }
+
+      &.active {
+        background-color: #463b88;
+      }
+
+      &:focus {
+        /* outline-style: solid;
+        outline-color: #fff990; */
+        outline: 5px solid red;
+        outline-offset: 0px;
+        background-color: yellow;
+        color: red;
+        /* font-weight */
+      }
+
+      &::selection {
+        color: red;
+        background-color: yellow;
+      }
+    }
+
+    ul li a:nth-of-type(1) {
+      width: var(--whitespace-m);
+    }
+  }
 }
 
 main {
   grid-area: main;
   display: grid;
-  grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
-  grid-template-rows: repeat (4, 300px);
+  grid-template-columns: 1fr 1fr 1fr 1fr 20px 1fr 1fr 1fr;
+  grid-template-rows: 200px repeat(3, 200px);
 }
 
 h1 {
   display: block;
-  grid-column: 2/4;
+  grid-column: 4/9;
   grid-row: 1/2;
+  align-content: end;
+  transform: skew(-10deg);
+  padding-left: 50px;
 
   font-family: "Euripides", sans-serif;
   font-size: var(--step-2);
   color: var(--color);
+  /* color: #a81916; */
 }
 
+/* sectie met portret Frida */
 main > section:first-of-type {
   display: block;
-  grid-column: 3/4;
-  grid-row: 2/4;
+  grid-column: 4/5;
+  grid-row-start: 2;
+
+  /* portretfoto Frida */
+  img {
+    padding-top: 100px;
+    width: 100%;
+    display: block;
+  }
 }
 
+/* sectie met tekst*/
 main > section:nth-of-type(2) {
   display: block;
-  grid-column: 5/6;
+  grid-column: 6/8;
   grid-row: 2/4;
 
   p {
@@ -98,6 +204,7 @@ main > section:nth-of-type(2) {
   }
 }
 
+/* sectie met decoratie img */
 main > section:nth-of-type(3) {
   grid-column: 1/-1;
   grid-row: 1/-1;
