@@ -62,9 +62,8 @@ header {
   height: 100dvh;
 
   display: grid;
-  grid-template-columns: 5fr 4fr;
-  grid-template-rows: max-content 5fr 3fr;
-  grid-template-areas: "nav nav" "a b" "c d";
+  grid-template-rows: max-content;
+  grid-template-areas: "nav nav";
   gap: var(--whitespace-xxs);
   font-family: "Euripides", sans-serif;
 
