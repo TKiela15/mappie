@@ -67,6 +67,7 @@ header {
   grid-template-areas: "nav nav" "a b" "c d";
   gap: var(--whitespace-xxs);
   font-family: "Euripides", sans-serif;
+
   /* MARK: Nav-bar */
   nav {
     position: sticky;
