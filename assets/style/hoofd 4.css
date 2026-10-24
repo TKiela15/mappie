@@ -29,6 +29,7 @@ html {
   --background: light-dark(#6c7bc6, #463b88);
   --background-2: light-dark(#bd4839, #a81916);
   --color: light-dark(#fff990, whitesmoke);
+  --accent-color: deeppink;
 
   --whitespace-xxs: 1em;
   --whitespace-xs: 2em;
