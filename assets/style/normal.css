@@ -378,10 +378,14 @@ html:has(dialog:open) {
 footer {
   grid-area: footer;
   display: grid;
-  grid-template-rows: 200px 100px;
+  grid-template-rows: 200px max-content;
 }
 
 footer > section:first-of-type {
+  display: block;
+}
+
+footer > section:nth-of-type(2) {
   align-content: end;
 
   img {
@@ -391,7 +395,8 @@ footer > section:first-of-type {
   }
 }
 
-footer > section:nth-of-type(2) {
+footer > section:nth-of-type(3),
+footer > section:nth-of-type(4) {
   background-color: #bd4839;
 
   p {
@@ -416,5 +421,128 @@ footer > section:nth-of-type(2) {
     &:hover {
       color: var(--accent-color);
     }
+  }
+}
+
+footer > section:nth-of-type(5) {
+  background-color: #bd4839;
+  display: grid;
+
+  button {
+    width: 8em;
+    height: 2em;
+    padding: 0;
+    margin: 1em;
+    border-radius: 8px;
+    background-color: var(--background);
+    justify-self: end;
+
+    font-family: "Euripides";
+    font-size: var(--step-0);
+    color: var(--color);
+
+    &:hover {
+      border-style: dotted;
+      border-width: 3px;
+      border-color: #fff990;
+    }
+  }
+}
+
+dialog {
+  width: 400px;
+  height: 400px;
+  background-color: antiquewhite;
+
+  &::backdrop {
+    backdrop-filter: blur(0.5em);
+  }
+}
+
+/* MARK: dialog -> grid */
+footer > form {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-areas:
+    "h3 close"
+    "leeg   img"
+    "text text"
+    "ja   nee";
+
+  footer > label:first-of-type {
+    grid-area: leeg;
+    display: block;
+  }
+
+  footer > label:nth-of-type(2) {
+    grid-area: close;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    button.close {
+      width: 2em;
+      height: auto;
+      aspect-ratio: 1;
+      background-color: var(--background-2);
+    }
+  }
+
+  /* h3 */
+  footer > label:nth-of-type(3) {
+    grid-area: h3;
+    justify-self: end;
+    translate: 2em 1em;
+
+    h3 {
+      font-size: var(--step-2);
+      color: var(--background);
+    }
+  }
+
+  /* img eyebrows */
+  footer > label:nth-of-type(4) {
+    grid-area: img;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 2em;
+    }
+  }
+
+  /* <p> */
+  footer > label:nth-of-type(5) {
+    grid-area: text;
+    padding: 1em;
+
+    p {
+      color: var(--background-2);
+      grid-area: text;
+      font-size: 14px;
+    }
+  }
+
+  footer > label:nth-of-type(6) {
+    grid-area: ja;
+    justify-self: center;
+  }
+
+  footer > label:nth-of-type(7) {
+    grid-area: nee;
+    justify-self: center;
+  }
+
+  /* =accepteren EN weigeren*/
+  button {
+    width: 7em;
+    height: auto;
+
+    background-color: var(--background-2);
+    color: var(--color);
+    font-size: var(--step-0);
   }
 }

@@ -26,9 +26,7 @@
         <ul>
           <li><a href="">Digitaal Tuintje van tessa</a></li>
           <li>
-            <a
-              aria-label="Link naar de hoofdpagina"
-              href="http://127.0.0.1:5500/"
+            <a aria-label="naar de hoofdpagina" href="http://127.0.0.1:5500/"
               >Home</a
             >
           </li>
@@ -106,46 +104,67 @@
       <img src="./assets/images/banner-patroontje.svg" alt="" />
 
       <section>
-        <a href="hoofd 1.html">
-          <img src="./assets/images/frida-hoofd-II.png" alt="hoofd van Frida" />
+        <a aria-link="Naar 'Frida in het kort'" href="hoofd 1.html">
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="Eerste Frida hoofd"
+          />
         </a>
       </section>
 
       <section>
-        <a href="hoofd 2.html">
-          <img src="./assets/images/frida-hoofd-II.png" alt="hoofd van Frida" />
+        <a aria-link="Naar 'Webpagina twee'" href="hoofd 2.html">
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="Tweede Frida hoofd"
+          />
         </a>
       </section>
 
       <section>
-        <a href="hoofd 3.html">
-          <img src="./assets/images/frida-hoofd-II.png" alt="hoofd van Frida" />
+        <a aria-link="Naar 'Droomwereld & kunstwerken'" href="hoofd 3.html">
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="Derde Frida hoofd"
+          />
         </a>
       </section>
 
       <section>
-        <a href="hoofd 4.html">
-          <img src="./assets/images/frida-hoofd-II.png" alt="hoofd van Frida" />
+        <a aria-link="Naar 'La casa azul'" href="hoofd 4.html">
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="Vierde Frida hoofd"
+          />
         </a>
       </section>
 
       <section>
-        <a href="hoofd 5.html">
-          <img src="./assets/images/frida-hoofd-II.png" alt="hoofd van Frida" />
+        <a aria-link="Naar 'Webpagina vijf'" href="hoofd 5.html">
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="Vijfde Frida hoofd"
+          />
         </a>
       </section>
 
       <section>
-        <a href="hoofd 6.html">
-          <img src="./assets/images/frida-hoofd-II.png" alt="hoofd van Frida" />
+        <a aria-link="Naar 'Webpagina zes'" href="hoofd 6.html">
+          <img
+            src="./assets/images/frida-hoofd-II.png"
+            alt="Zesde Frida hoofd"
+          />
         </a>
       </section>
 
       <!-- brondv bschbvadhjkfv badfj -->
-      <img src="./assets/images/banner-patroontje.svg" alt="hoofd van Frida" />
+      <img src="./assets/images/banner-patroontje.svg" alt="" />
     </main>
 
+    <!-- Footer -->
+
     <footer>
+      <section></section>
       <section>
         <img src="./assets/images/rafelrand.svg" alt="" />
       </section>
@@ -159,8 +178,54 @@
             >Tanvi</a
           >
         </p>
+      </section>
+      <section>
         <p>[Copyleft 2026, all wrongs reversed]</p>
       </section>
+      <section>
+        <button
+          aria-label="Naar cookievenster"
+          commandfor="new-joke"
+          command="show-modal"
+        >
+          Cookies
+        </button>
+      </section>
+
+      <dialog id="new-joke" class="modal">
+        <form method="dialog">
+          <label></label>
+          <label>
+            <button aria-label="sluit cookie venster" class="close">
+              X
+            </button></label
+          >
+          <label><h3>Cookies</h3></label>
+          <label
+            ><img src="./assets/images/eyebrows.svg" alt="foto_ogen_frida"
+          /></label>
+          <label
+            ><p>
+              Deze website wordt gehost vanaf
+              <a
+                aria-label="Naar Github webpagina"
+                href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+              >
+                Github Pages.</a
+              >
+              Klik je op accepteren? Dan ga je ermee akkoord dat Github bepaalde
+              gegevens van jou kan verwerken, zoals bijvoorbeeld je IP-adres.
+              (Github gebruikt deze gegevens voor o.a. beveiliging van de
+              website)
+            </p>
+
+            <p>Deze website maakt zelf geen gebruik van cookies.</p></label
+          >
+
+          <label><button type="submit">Accepteren</button></label>
+          <label><button type="submit">Weigeren</button></label>
+        </form>
+      </dialog>
     </footer>
   </body>
 </html>
