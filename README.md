@@ -301,10 +301,15 @@ Wireflows:
 ### Schetsen songtekst
 
 <img src="./Img read.me/Songtekst-1.jpeg">
+
 <img src="./Img read.me/songtekst 3.jpeg">
+
 <img src="./Img read.me/Songtekst 4.jpeg">
+
 <img src="./Img read.me/Songtekst 5.jpeg">
+
 <img src="./Img read.me/Songtekst 6.jpeg">
+
 <img src="./Img read.me/Songtekst 8.jpeg">
 
 ### CHECK-OUT
@@ -360,24 +365,42 @@ Wireflows:
 
 ## WOE - 27/10
 
-- Proces website
-  HTML & CSS:
+### Proces website
+
+HTML & CSS:
 
 <Img src="./Img read.me/S1.png">
+
 <Img src="./Img read.me/S2.png">
+
 <Img src="./Img read.me/S3.png">
+
 <Img src="./Img read.me/S4.png">
+
 <Img src="./Img read.me/S5.png">
+
 <Img src="./Img read.me/S6.png">
+
 <Img src="./Img read.me/S7.png">
+
 <Img src="./Img read.me/S8.png">
+
 <Img src="./Img read.me/S9.png">
+
 <Img src="./Img read.me/S10.png">
+
 <Img src="./Img read.me/S11.png">
+
 <Img src="./Img read.me/S12.png">
+
 <Img src="./Img read.me/S13.png">
+
 <Img src="./Img read.me/S14.png">
+
 <Img src="./Img read.me/S15.png">
+
 <Img src="./Img read.me/S16.png">
+
+<Img src="./Img read.me/S17.png">
 
 Vormgeving
