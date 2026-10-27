@@ -420,7 +420,7 @@ Ik heb voor wat duidelijkheid nog 4 reflectievragen over afgelopen weken:
 
 1. Wat heb ik geleerd?
 
-- Stap voor stap ontwerpen is belangrijk bij een website. Dingen als HTML uitdenken of een schets eerst tekenen kan heel veel tijd en moeite schelen. Ik ben nogal in het diep gesprongen zonder een plan te maken. Hierdoor ben ik, door veel fouten te maken, dingen echt goed gaan begrijpen.
+- Stap voor stap ontwerpen is belangrijk bij een website. Dingen als HTML uitdenken of een schets eerst tekenen kan heel veel tijd en moeite schelen. Ik ben nogal in het diep gesprongen zonder een plan te maken. Hierdoor ben ik, door veel fouten te maken, dingen echt goed gaan begrijpen, maar ik denk ook in de knel met tijd gekomen.
 - Accessibility op het web.
 
 2. Wat ging er goed en waarom?
