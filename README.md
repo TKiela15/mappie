@@ -35,21 +35,21 @@ Door je code aan te passen in VSCodium en op te slaan, je website wordt dan geü
 - HTML & CSS BASICS (Justus)
   Aantekeningen:
 
-<img src="./assets/images/2026-09-10 23-14 pagina 1.jpeg" >
-<img src="./assets/images/2026-09-10 23-14 pagina 2.jpeg" >
-<img src="./assets/images/2026-09-10 23-14 pagina 3.jpeg" >
+<img src="./Img read.me/2026-09-10 23-14 pagina 1.jpeg">
+<img src="./Img read.me/2026-09-10 23-14 pagina 2.jpeg">
+<img src="./Img read.me/2026-09-10 23-14 pagina 3.jpeg">
 
 - Interactie: MMD, micro-interacties, forms (Nicky)
   We hebben gewerkt aan het wok-to-walk menu:
-  <img src="./assets/images/figma wok-to-walk menu.png" >
+  <img src="./Img read.me/figma wok-to-walk menu.png" >
 
 ## VRIJ - 4/9
 
 - Praktische CSS (Vasilis)
 
 - Schetsen (Charley)
-  <img src="./assets/images/schetsen deep dive.jpeg" >
-  <img src="./assets/images/aantekeningen schetsen deep dive.jpeg" >
+  <img src="./Img read.me/schetsen deep dive.jpeg" >
+  <img src="./Img read.me/aantekeningen schetsen deep dive.jpeg" >
 
 # SPRINT1
 
@@ -216,7 +216,7 @@ Hiërarchie
 - Human Consent Component
 
 Wireflows:
-<img src="./Img read.me/Wireflows.jpeg.jpeg">
+<img src="./Img read.me/Wireflows.jpeg">
 <img src="./Img read.me/Wireflows-1.jpeg">
 
 ### CHECK-OUT
@@ -260,7 +260,15 @@ Wireflows:
 ## WOE - 30/9
 
 - Toegankelijkheid testen
--
+
+### WCAG Checklist
+
+<img src="./Img read.me/WCAG-1.jpeg">
+<img src="./Img read.me/WCAG-2.jpeg">
+<img src="./Img read.me/WCAG-3.jpeg">
+<img src="./Img read.me/WCAG-4.jpeg">
+<img src="./Img read.me/WCAG-5.jpeg">
+<img src="./Img read.me/WCAG-6.jpeg">
 
 ### CHECK-OUT
 
