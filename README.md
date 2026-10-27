@@ -359,3 +359,25 @@ Wireflows:
 <img src="./Img read.me/expo feedback.jpeg">
 
 ## WOE - 27/10
+
+- Proces website
+  HTML & CSS:
+
+<Img src="./Img read.me/S1.png">
+<Img src="./Img read.me/S2.png">
+<Img src="./Img read.me/S3.png">
+<Img src="./Img read.me/S4.png">
+<Img src="./Img read.me/S5.png">
+<Img src="./Img read.me/S6.png">
+<Img src="./Img read.me/S7.png">
+<Img src="./Img read.me/S8.png">
+<Img src="./Img read.me/S9.png">
+<Img src="./Img read.me/S10.png">
+<Img src="./Img read.me/S11.png">
+<Img src="./Img read.me/S12.png">
+<Img src="./Img read.me/S13.png">
+<Img src="./Img read.me/S14.png">
+<Img src="./Img read.me/S15.png">
+<Img src="./Img read.me/S16.png">
+
+Vormgeving
