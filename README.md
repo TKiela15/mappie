@@ -403,4 +403,41 @@ HTML & CSS:
 
 <Img src="./Img read.me/S17.png">
 
-Vormgeving
+## stukje reflectie
+
+Ik heb voor wat duidelijkheid nog 4 reflectievragen over afgelopen weken:
+
+1. Wat heb ik geleerd?
+
+- Plan maken;
+- Ik ben eigenlijk zonder een heel duidelijk plan begonnen, hierdoor heb ik veel geleerd door fouten te maken, maar ben ik tegelijkertijd ook in de knel geraakt (o.a. met tijd). Ik moest vaak opnieuw kijken naar onderdelen, wat voorkomen had kunnen worden had ik
+- Er kwam steeds wat bij en ging er weer af, wat denk ik bij coderen hoort, maar stond niet even stil bij wat ik wilde/de bedoeling was.
+-
+
+Dit gaat dan over coderen, maar ook over een schets maken voordat je begint.
+
+Ik heb voor wat duidelijkheid nog 4 reflectievragen over afgelopen weken:
+
+1. Wat heb ik geleerd?
+
+- Stap voor stap ontwerpen is belangrijk bij een website. Dingen als HTML uitdenken of een schets eerst tekenen kan heel veel tijd en moeite schelen. Ik ben nogal in het diep gesprongen zonder een plan te maken. Hierdoor ben ik, door veel fouten te maken, dingen echt goed gaan begrijpen.
+- Accessibility op het web.
+
+2. Wat ging er goed en waarom?
+
+- Ik ben erg tevreden over de vormgeving. Ik heb het idee dat de kleuren goed bij het thema passen en ik vind het leuk dat ik zelf wat creatiefs kon doen met illustrator en er eigen tekeningen aan kon toevoegen.
+- Het proces van de songtekst. Hierbij ging het ontwerpen veel meer stapsgewijs, van schets naar grid en vormgeving etc.
+- Het onderdeel grid begon voor mij erg stroef, maar ik ben blijven proberen en begrijp het nu heel goed!
+
+3. Wat vond ik moeilijk?
+
+- Overzicht houden in het proces.
+- Responsiveness
+- Om hulp vragen
+- Ik heb een dubbel gevoel over dit blok. Ik heb erg veel geleerd en de drempel van coderen is ook heel erg verlaagd. Toch vond ik het lastig om het tempo bij te houden, waardoor ik achterliep en veel dingen niet helemaal af zijn.
+
+4. Wat zou ik de volgende keer anders doen of toevoegen?
+
+- Ik zou de overige pagina’s van de website afmaken en hier dan natuurlijk ook meer informatie in zetten. Misschien ook iets persoonlijker maken; vertellen wat ikzelf interessant vind aan Frida Kahlo.
+- Meer interactie, zoals scroll-animaties, interessantere hover states, voor mijn gevoel is de website nu nog best wel statisch.
+- Proces beter bijhouden. Het ontwerpproces bijhouden is een valkuil geweest, ik was erg bezig met HTML/CSS en vormgeving. Daardoor heb ik niet genoeg stilgestaan en even momenten genomen om te reflecteren/stil te staan en het zo overzichtelijk te houden.
